@@ -16,6 +16,10 @@ provider:
     env: test
     created-date: 2023-02-10
     team: data
+  apiGateway:
+    apiKeys:
+      - name: 'rajat'
+      - value: 'XIUas1SNUIOAPDIJdsaN34sdJIOSJUDDS' 
 
 functions:
   hello:
@@ -24,3 +28,4 @@ functions:
       - http:
           path: /hello
           method: post
+          private: true

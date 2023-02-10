@@ -19,3 +19,14 @@ This is the basic POC to return a message while posting to the create API.
 3. After creating the app in serverless open a terminal in the root of this directory and enter `sls deploy`
 
 4. Then Check the progress and debug (see the serverless console as well as AWS Cloudformation console.)
+
+5. Hit a POST request to the provided URL
+
+
+# v2.0.0 Athunticate API with Keys
+
+Addition to the basic POC utilizing API key.
+
+1. After checking out to tag v2.0.0 just run `sls deploy` again
+
+2. Then Hit the POST request to the provided URL with a Header `x-api-key` with the provided API key
