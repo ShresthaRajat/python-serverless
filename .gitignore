@@ -1,0 +1,5 @@
+.serverless/aws-python-http-api-project.zip
+.serverless/cloudformation-template-create-stack.json
+.serverless/cloudformation-template-update-stack.json
+.serverless/custom-resources.zip
+.serverless/serverless-state.json
