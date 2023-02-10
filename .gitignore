@@ -3,3 +3,5 @@
 .serverless/cloudformation-template-update-stack.json
 .serverless/custom-resources.zip
 .serverless/serverless-state.json
+__pycache__/handler.cpython-38.pyc
+__pycache__/s_hello.cpython-38.pyc
