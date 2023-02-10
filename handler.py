@@ -3,7 +3,7 @@ import json
 
 def hello(event, context):
     body = {
-        "message": "Boom Boom! Your function executed successfully!",
+        "message": "Hello World! Your function executed successfully!",
         "input": event,
     }
 
