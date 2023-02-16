@@ -1,21 +1,21 @@
-
-
 org: shrestharajat
 app: demopy
 service: aws-python-http-api-project
 frameworkVersion: '3'
 
+plugins:
+  - serverless-domain-manager
+ 
+custom:
+  customDomain:
+    domainName: 'api.shrestharajat.com'
+    basePath: ''
+    stage: '$default'
+    createRoute53Record: true
+
 provider:
   name: aws
   runtime: python3.8
-  memorySize: 2000
-  timeout: 900
-  architecture: x86_64
-  stackTags:
-    product: poc
-    env: test
-    created-date: 2023-02-10
-    team: data
   apiGateway:
     apiKeys:
       - name: 'rajat'

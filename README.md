@@ -27,6 +27,20 @@ This is the basic POC to return a message while posting to the create API.
 
 Addition to the basic POC utilizing API key.
 
-1. After checking out to tag v2.0.0 just run `sls deploy` again
+1. First create a subdomain/domain certificate in AWS ACM in us-east-1 region
 
-2. Then Hit the POST request to the provided URL with a Header `x-api-key` with the provided API key
+2. checkout to to tag v2.0.0 run `sls create_domain` after fixing the domain name in `serverless.yml` file
+
+3. After that step is completed (might take a while for the cloudfront) run `sls deploy`
+
+2. Then Hit the POST request to the domain and endpoint with a Header `x-api-key` with the provided API key
+
+
+## Serverless commands
+
+```
+sls create_domain
+sls invoke local --function hello
+sls deploy
+sls remove
+```
